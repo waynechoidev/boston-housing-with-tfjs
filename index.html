@@ -1,13 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Web-based Machine Learning Training</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="container">
+        <h4>Dataset</h4>
+        <div>
+          <button id="load-button">Load Data</button>
+          <span id="load-process"></span>
+        </div>
+        <span id="base-loss"></span>
+      </div>
+
+      <footer>(C) 2023. Wayne Choi. All rights reserved.</footer>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

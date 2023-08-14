@@ -14,3 +14,75 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+h3 {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+p,
+span {
+  margin: 0;
+  margin-bottom: 7px;
+}
+h4,
+h5 {
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+button {
+  width: 200px;
+  margin-right: 7px;
+  margin-bottom: 7px;
+}
+
+#base-loss {
+  margin-left: 5px;
+}
+
+#models {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.graph {
+  width: 90%;
+  margin: 0;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 0.8rem;
+  color: #757575;
+}
+
+@media (max-width: 768px) {
+  #app {
+    padding: 1rem 2rem;
+  }
+  #models {
+    flex-direction: column;
+  }
+  .graph {
+    width: 100%;
+  }
+  p,
+  h3 {
+    width: 100%;
+  }
+  button {
+    width: 200px;
+  }
+}

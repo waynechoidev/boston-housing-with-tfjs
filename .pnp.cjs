@@ -28,6 +28,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@types/papaparse", "npm:5.3.7"],\
+            ["papaparse", "npm:5.4.1"],\
             ["typescript", "patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"],\
             ["vite", "virtual:c9a17a2973b40ea8fc0e7ee28126a27720515d4e67f137407fa6d5df29dfae23cb874ed60fdb90b9100e9e86536c041638cd1fe11929171e8fc3c40dd9d13e8a#npm:4.4.9"]\
           ],\
@@ -280,6 +282,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@tootallnate-once-npm-2.0.0-e36cf4f140-ad87447820.zip/node_modules/@tootallnate/once/",\
           "packageDependencies": [\
             ["@tootallnate/once", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/node", [\
+        ["npm:20.5.0", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-20.5.0-ea170d5dd7-659bc5fc93.zip/node_modules/@types/node/",\
+          "packageDependencies": [\
+            ["@types/node", "npm:20.5.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/papaparse", [\
+        ["npm:5.3.7", {\
+          "packageLocation": "./.yarn/cache/@types-papaparse-npm-5.3.7-df94b19254-5ffa6fc81c.zip/node_modules/@types/papaparse/",\
+          "packageDependencies": [\
+            ["@types/papaparse", "npm:5.3.7"],\
+            ["@types/node", "npm:20.5.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1134,6 +1155,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["papaparse", [\
+        ["npm:5.4.1", {\
+          "packageLocation": "./.yarn/cache/papaparse-npm-5.4.1-954555a2a7-fc9e52f715.zip/node_modules/papaparse/",\
+          "packageDependencies": [\
+            ["papaparse", "npm:5.4.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["path-is-absolute", [\
         ["npm:1.0.1", {\
           "packageLocation": "./.yarn/cache/path-is-absolute-npm-1.0.1-31bc695ffd-060840f92c.zip/node_modules/path-is-absolute/",\
@@ -1429,6 +1459,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["tsjs-practice", "workspace:."],\
+            ["@types/papaparse", "npm:5.3.7"],\
+            ["papaparse", "npm:5.4.1"],\
             ["typescript", "patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"],\
             ["vite", "virtual:c9a17a2973b40ea8fc0e7ee28126a27720515d4e67f137407fa6d5df29dfae23cb874ed60fdb90b9100e9e86536c041638cd1fe11929171e8fc3c40dd9d13e8a#npm:4.4.9"]\
           ],\
