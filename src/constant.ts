@@ -12,4 +12,9 @@ export type DatasetType = {
   testTarget: number[][];
 };
 
-export type ChartDataType = { epoch: number; meanLoss: number };
+export enum ModelType {
+  LinearRegressionModel = 1,
+  MultiLayerPerceptronRegressionModel1Hidden = 2,
+  MultiLayerPerceptronRegressionModel2Hidden = 3,
+  multiLayerPerceptronRegressionModel1HiddenNoSigmoid = 4,
+}

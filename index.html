@@ -7,6 +7,32 @@
   </head>
   <body>
     <div id="app">
+      <header>
+        <h1>Web-based Machine Learning Training</h1>
+        <h3>
+          Simulation of Linear Regression and Custom MLP Models using
+          Tensorflow.js
+        </h3>
+      </header>
+      <div class="container">
+        <h4>Summary</h4>
+        <p>
+          Dive into a web-based machine learning training that explores both
+          linear regression and custom Multi-Layer Perceptron (MLP) models with
+          Tensorflow.js. The project utilizes
+          <a
+            href="https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html"
+            target="_blank"
+            >the Boston Housing Dataset</a
+          >
+          for practical application. You can check code implementation in
+          <a
+            href="https://github.com/waynechoidev/boston-housing-with-tfjs"
+            target="_blank"
+            >this repo</a
+          >.
+        </p>
+      </div>
       <div class="container">
         <h4>Dataset</h4>
         <div>
@@ -14,6 +40,28 @@
           <span id="load-process"></span>
         </div>
         <span id="base-loss"></span>
+      </div>
+
+      <div class="container">
+        <h4>Choose Model</h4>
+        <select id="model-dropdown" disabled>
+          <option value="" disabled selected>Select a Model Type</option>
+          <option value="1">Linear Regression Model</option>
+          <option value="2">MLP Regression Model (1 Hidden Layer)</option>
+          <option value="3">MLP Regression Model (2 Hidden Layer)</option>
+          <option value="4">
+            MLP Regression Model (1 Hidden Layer, No Sigmoid)
+          </option>
+        </select>
+      </div>
+
+      <div class="container">
+        <h4 id="model-label"></h4>
+        <div id="graph"></div>
+        <span id="epoch"></span>
+        <span id="mean-loss"></span>
+        <span id="test-loss"></span>
+        <button id="train-button" disabled>Train Model</button>
       </div>
 
       <footer>(C) 2023. Wayne Choi. All rights reserved.</footer>

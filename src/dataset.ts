@@ -61,10 +61,6 @@ export class BostonHousingDataset {
     };
   }
 
-  get numTrainFeatures() {
-    return this._trainFeatures?.[0].length ?? 0;
-  }
-
   // Private methods
   private async loadCsv(filename: string) {
     return new Promise<number[][]>((resolve) => {
