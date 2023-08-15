@@ -5,9 +5,6 @@ import * as tfvis from "@tensorflow/tfjs-vis";
 const epochUI = document.getElementById("epoch") as HTMLElement;
 const meanLossUI = document.getElementById("mean-loss") as HTMLElement;
 const testLossUI = document.getElementById("test-loss") as HTMLElement;
-const trainButton = document.getElementById(
-  `train-button`
-) as HTMLButtonElement;
 const modelDropdown = document.getElementById(
   "model-dropdown"
 ) as HTMLSelectElement;
@@ -104,7 +101,6 @@ export class Tensors {
   async trainModel() {
     const model = this.getModel(this._modelType);
 
-    trainButton.disabled = true;
     modelDropdown.disabled = true;
 
     model.compile({
@@ -134,7 +130,6 @@ export class Tensors {
             }
           );
           if (epoch + 1 === this._numEpochs) {
-            trainButton.disabled = false;
             modelDropdown.disabled = false;
             meanLossUI!.innerHTML = `Training Set Final Mean Loss: ${logs!.loss.toFixed(
               2
@@ -162,6 +157,7 @@ export class Tensors {
   cleanResult() {
     epochUI.innerHTML = "";
     meanLossUI.innerHTML = "";
+    testLossUI.innerHTML = "";
     graph.innerHTML = "";
   }
 

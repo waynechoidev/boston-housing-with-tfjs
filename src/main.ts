@@ -30,11 +30,6 @@ modelDropdown.addEventListener("change", () => {
   const modelType = parseInt(modelDropdown.value) as ModelType;
   tensors.modelType = modelType;
   document.getElementById("model-label")!.innerHTML = tensors.modelLabel;
-  (document.getElementById(`train-button`) as HTMLButtonElement).disabled =
-    false;
   tensors.cleanResult();
+  tensors.trainModel();
 });
-
-document
-  .getElementById("train-button")
-  ?.addEventListener("click", () => tensors.trainModel());
