@@ -43,15 +43,15 @@ export class Tensors {
     return this._testTarget;
   }
 
-  //   get baseline() {
-  //     const avgPrice = this.mean(this._trainTarget);
+  get baseline() {
+    const avgPrice = this._trainTarget.mean();
 
-  //     const diff = this.sub(this._testTarget, avgPrice);
-  //     const squaredDiff = this.square(diff);
-  //     const baseline = this.mean(squaredDiff);
+    const diff = this._testTarget.sub(avgPrice);
+    const squaredDiff = diff.square();
+    const baseline = squaredDiff.mean();
 
-  //     return baseline;
-  //   }
+    return baseline.dataSync()[0];
+  }
 
   private determineMeanAndStddev(data: tf.Tensor2D) {
     const dataMean = data.mean(0);
